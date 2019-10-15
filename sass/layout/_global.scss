@@ -1,0 +1,78 @@
+.full-width {
+	width: 100%;
+}
+.sitewrapper {
+	max-width: 75em;
+	margin-left: auto;
+	margin-right: auto;			
+	padding: 0 1em;
+	@include query-tablet-up {
+		padding: 0 2em;
+	}
+}
+
+.no-top-image {
+	padding-top: 10px;
+}
+
+@include query-tablet-up {
+	.has-sidebar {
+		#content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.site-main{
+			width: 65%;
+		}
+
+		#secondary {
+			width: 30%;
+		}
+	}
+
+	.no-sidebar {
+		display: block;
+		.site-main{
+			width: 100%;
+		}
+	}
+}
+
+/*-------- columnas ----------*/
+@include query-tablet-up {
+
+	.grid1 {
+		display: flex;
+	}
+
+	.grid2, .grid3, .grid4, .grid5 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.titulo-seccion {
+			width: 100%
+		}
+	}
+
+	.grid2 > .bloque-chico, .grid2 > img, .grid2 > div, .grid2 > article, .grid2 > p, .grid2 > form {
+			width: 48%;
+		}
+
+	.grid3 > .bloque-chico, .grid3 > img, .grid3 > div, .grid3 > article, .grid3 > p, .grid3 > form {
+			width: 28%;
+		}
+
+	.grid4 > .bloque-chico, .grid4 > img, .grid4 > div, .grid4 > article, .grid4 > p, .grid4 > form {
+			width: 22%;
+		}
+
+	.grid5 > .bloque-chico, .grid5 > img, .grid5 > div, .grid5 > article, .grid5 > p, .grid5 > form {
+			width: 18%;
+		}
+	
+
+}
+
+

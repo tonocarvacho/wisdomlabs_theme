@@ -1,0 +1,139 @@
+.bloque-header {
+	height: 90px;
+}
+
+
+.header-wrap {
+	height: 55px;
+	background-color: $color__header-background;
+}
+.site-header {
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.11);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.11);
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.11);
+	width: 100%;
+	
+	.sitewrapper {
+
+			height: 100%;
+			@include query-tablet-up {	
+			.nav-buttons {
+					order: 1;
+				}	
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				}
+				@include query-tablet-down {
+					.nav-buttons {
+					display: flex;
+					align-items: center;
+				}
+	display: flex;
+justify-content: space-between;	
+flex-wrap: wrap;
+.main-navigation {
+
+    flex-basis: 100%;
+
+}
+
+}
+
+		}
+		#header-bar {
+			width: 100%;
+			background-color: $color__header-bar;
+			color: $color__header-bar-text;
+			padding: 0.3em 0;
+			.sitewrapper {
+				justify-content: space-between;	
+				display: flex;
+				
+				@include query-phone-down {	
+				.correo, .mapa {
+					display: none;
+				}	
+
+				}
+				
+		}
+	
+}
+	
+}
+
+.site-branding {
+	height: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@include query-tablet-up {
+		flex: 1 0 auto;
+	}
+	.custom-logo-link {
+		display: flex;
+		margin: 7px 0;
+		img {
+			height: 35px;
+			width: auto;
+			max-width: none;
+		}
+		
+		@include query-desktop-up {
+			img {
+			height: 41px;
+			}
+		}
+		
+	}
+}
+.main-navigation {
+	@include query-tablet-up {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+#primary-menu {
+	
+	a {
+		color: $color__main-text;
+	}
+}
+.barramenu {
+    width: 30px;
+    height: 4px;
+    background-color: grey;
+    margin: 4px 0;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.site-title {
+	font-size: 1.8em;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+}
+
+.site-description {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+/*
+Header Menu 
+*/
+@import "header-menu";
+

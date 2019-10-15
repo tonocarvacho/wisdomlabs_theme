@@ -1,0 +1,87 @@
+header nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  float: none;
+  margin-left: 0;
+}
+
+header nav ul li a { 
+  display: block; 
+}
+
+@include query-tablet-up {
+header nav ul li a { 
+  display: block;  padding: .425rem 0rem;
+}
+}
+
+@include query-tablet-down {
+
+#primary-menu {
+  background: rgba(255, 255, 255, 0.95);
+  margin: 0 -15px;
+}
+
+ul { 
+  clear: both; 
+}
+
+ul li { padding: .5em 0; }
+
+}
+
+.hide-nav {
+ transform: translateY(-120% !important); -webkit-transform: translateY(-120%) !important; }
+
+.nav-toggle {
+display: block;
+border-radius: 5px;
+background-color: transparent;
+height: 100%;
+width: 38px;
+cursor: pointer;
+padding: 17px 0 15px 15px;
+
+}
+
+.nav-toggle.open span:first-child { transform: rotate(45deg) translate(4.4px, 4.4px); }
+
+.nav-toggle.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.nav-toggle.open span:last-child { transform: rotate(-45deg) translate(4.4px, -4.4px); }
+@include query-tablet-up {
+
+.nav-toggle { display: none; }
+}
+
+.nav-toggle span {
+  position: relative;
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-top: 4px;
+  background-color: #000;
+  transition: all .25s;
+}
+
+#masthead {
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+	background: rgba(255, 255, 255, 0.95);
+  z-index: 3;
+  will-change: transform;
+  transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+  transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}

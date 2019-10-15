@@ -1,0 +1,44 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	
+	background: transparent;
+	color: black;
+	font-family: $font__lato;
+	@include font-size(1);
+	line-height: 1;
+	padding: 0 .3em;
+
+	&:hover ,
+	&:active,
+	&:focus {
+		background: white;
+		color: black;
+	}
+}
+
+/* botones linea */
+.linebtn {
+	padding: 15px;	
+	color: white !important;	
+	font-weight: bold;	
+	margin-top: 30px;	
+	font-size: 1em;	
+	border: 2px solid white;
+}
+
+.linebtn:hover {	
+	color: #1BAC91 !important;	
+	background-color: white;	
+	border: 2px solid white;
+}
+
+.primary-button {
+	background: #0379c5;
+color: #ffffff;
+padding: 0.4em 1em;
+border-radius: 5px;
+margin-left: 0.5em;
+}

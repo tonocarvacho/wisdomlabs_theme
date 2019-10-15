@@ -1,0 +1,39 @@
+.wp-caption.aligncenter,
+.centered-image {
+	max-width: 100vw;
+	margin: 0 -1em;
+	text-align: center;
+	@include query-tablet-up {
+		margin: 0 -2em;
+	}
+}
+
+/* Single Post Featured Images */
+
+.full-bleed {
+	width: 100vw;
+	max-height: 1200px;
+	margin-top: 1em;
+	margin-left: -1em;
+	border-top: 1px solid hsl(0, 0%, 90%);
+	border-bottom: 1px solid hsl(0, 0%, 90%);
+	overflow: hidden;
+	
+	@include query-tablet-up {
+		margin-left: -2em;
+	}
+	
+	@include query-desktop-up {
+		margin-top: 1.5em;
+		margin-right: -2em;
+	}
+	
+	@include query-big-desktop-up {
+		margin-right: calc( ((-100vw + 75em)/2) - 2em );
+		margin-left: calc( ((-100vw + 75em)/2) - 2em );
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+} 

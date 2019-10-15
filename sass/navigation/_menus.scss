@@ -1,0 +1,192 @@
+.main-navigation {
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			display: none;
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 99999;
+			background-color: white;
+			padding: 10px;
+			min-width: 300px;
+			justify-content: flex-start;
+
+			ul {
+				left: -999em;
+				
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+				}
+			}
+
+			a {
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+		}
+		.children li {
+			margin: 5px 0;
+		}
+	}
+
+	li {
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+
+.menu-item-has-children,
+	.page_item_has_children {
+		position: relative;
+	}
+
+ul.children.toggled-on  {
+			left: 1em;	
+}
+
+.main-navigation{
+	position: relative;
+}
+.menu-toggle{
+	display: block;
+	position: absolute;
+			top: -3em;
+			right: 0;
+}
+.menu-toggle,.toggled-on ul,
+.sub-menu.toggled-on {
+	display: block;
+}
+
+ 
+.sub-menu.toggled-on {
+	display: block;
+	left: 0;
+}
+
+
+
+
+@include query-tablet-up {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+	.main-navigation {
+
+			ul {
+			display: flex;
+			flex-wrap: wrap;
+			font-size: 0.9em;
+			justify-content: flex-end;
+			
+				li a{
+					padding: 0 0.6em;
+				}
+				li:last-child a{
+					padding: 0 0 0 1em;
+
+				}
+			
+
+			
+		}
+
+	}
+}
+
+@include query-desktop-up {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+	.main-navigation {
+
+			ul {
+			display: flex;
+			flex-wrap: wrap;
+			font-size: 1em;
+			justify-content: flex-end;
+			
+				li a{
+					padding: 0 1em;
+				}
+				li:last-child a{
+					
+				}
+			
+
+			
+		}
+
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+.dropdown-toggle {
+	margin-left: -15px;
+
+}
+
+.sub-menu li {
+	padding: 5px 0;
+}
