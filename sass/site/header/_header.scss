@@ -43,6 +43,7 @@ flex-wrap: wrap;
 
 		}
 		#header-bar {
+			height: 40px;
 			width: 100%;
 			background-color: $color__header-bar;
 			color: $color__header-bar-text;
@@ -50,7 +51,7 @@ flex-wrap: wrap;
 			.sitewrapper {
 				justify-content: space-between;	
 				display: flex;
-				
+				height: 100%;
 				@include query-phone-down {	
 				.correo, .mapa {
 					display: none;

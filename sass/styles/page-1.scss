@@ -1,16 +1,30 @@
-.page-1 {
-	#seccion1 {
-		background: #444 url("images/bg-1.jpg") no-repeat center center fixed;
-		h2 {
-			font-size: 7em;
+/* header */
+#header-bar {
+	.sitewrapper {
+
+i {
+				margin:0 10px 0 0;
+				
+				
+			}
+
+
+			.header-bar-datos {
+				font-size: 0.9em;
+				i {
+				margin:0 0 0 15px;
+				@include query-phone-up {
+					margin:0 3px 0 15px;
+				}
+				
+			}
+			}
+			
 		}
-		small {
-	    	font-size: 0.3em;
-	    	font-weight: normal;
-	    	display: block;
-		}
-	}
+	
 }
+
+/* elements */
 
 .divisor {
 	display: block;
@@ -75,6 +89,23 @@
 .btn.btn-transparent:hover, .btn.btn-transparent:focus {
     background: white;
     color: #3b404d;
+}
+
+
+/* secciones */
+
+.page-1 {
+	#seccion1 {
+		background: #444 url("images/bg-1.jpg") no-repeat center center fixed;
+		h2 {
+			font-size: 7em;
+		}
+		small {
+	    	font-size: 0.3em;
+	    	font-weight: normal;
+	    	display: block;
+		}
+	}
 }
 
 .formulario {
@@ -235,7 +266,7 @@ width: 46%;
 		}
 		@include query-desktop-up {
 		
-width: 26%;
+width: 29%;
 		}
 	margin:2%;
 		

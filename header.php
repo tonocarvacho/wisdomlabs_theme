@@ -27,9 +27,9 @@
 		<div id="header-bar">
 			<div class="sitewrapper">
 				<div><i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter-square"></i> </div>
-				<div><i class="fas fa-map-marker-alt"></i> <span class="mapa">Mapa </span>
+				<div class="header-bar-datos"><i class="fas fa-map-marker-alt"></i> <span class="mapa">Mapa </span>
 				<i class="fas fa-envelope"></i> <span class="correo">info@dentista.com</span>
-				<i class="fas fa-phone"></i> <span>+56912345678</span>
+				<i class="fas fa-phone"></i><span>+56912345678</span>
 			</div>
 			</div>
 		</div>

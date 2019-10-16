@@ -204,54 +204,6 @@ get_header();
 
 	<div class="modulo-testimonios">
 		<div class="sitewrapper">
-			
-				<div class="testimonios-blockquote">
-						<div class="testimonios-name">
-							<span class="testimonios-letter">K</span>
-							<cite>Kait J.</cite>
-							<div class="testimonios-stars">
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-							</div>
-						</div>
-						<p class="testimonios-body more shortened">I went in a few months ago for a cleaning. Candace was super helpful and friendly! She answered my questions and was great about explaining dental&nbsp;hygiene.</p>
-					</div>
-
-					<div class="testimonios-blockquote">
-						<div class="testimonios-name">
-							<span class="testimonios-letter">K</span>
-							<cite>Kait J.</cite>
-							<div class="testimonios-stars">
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-							</div>
-						</div>
-						<p class="testimonios-body more shortened">I went in a few months ago for a cleaning. Candace was super helpful and friendly! She answered my questions and was great about explaining dental&nbsp;hygiene.</p>
-					</div>
-					
-
-					<div class="testimonios-blockquote">
-						<div class="testimonios-name">
-							<span class="testimonios-letter">K</span>
-							<cite>Kait J.</cite>
-							<div class="testimonios-stars">
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-								<i class="fas fa-map-marker-alt"></i>
-							</div>
-						</div>
-						<p class="testimonios-body more shortened">I went in a few months ago for a cleaning. Candace was super helpful and friendly! She answered my questions and was great about explaining dental&nbsp;hygiene.</p>
-					</div>
-					
-
 					<div class="testimonios-blockquote">
 						<div class="testimonios-name">
 							<span class="testimonios-letter">K</span>

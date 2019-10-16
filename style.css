@@ -7009,7 +7009,8 @@ ul.children.toggled-on {
 }
 
 .sitewrapper {
-	max-width: 75em;
+	max-width: 69em;
+	min-width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 1em;
@@ -7088,7 +7089,7 @@ ul.children.toggled-on {
 
 .header-wrap {
 	height: 55px;
-	background-color: #06738E;
+	background-color: #fff;
 }
 
 .site-header {
@@ -7137,8 +7138,9 @@ ul.children.toggled-on {
 }
 
 .site-header #header-bar {
+	height: 40px;
 	width: 100%;
-	background-color: #08a5cb;
+	background-color: #0379C5;
 	color: #fff;
 	padding: 0.3em 0;
 }
@@ -7148,6 +7150,7 @@ ul.children.toggled-on {
 	    justify-content: space-between;
 	display: -ms-flexbox;
 	display: flex;
+	height: 100%;
 }
 
 @media (max-width: 34em) {
@@ -7261,6 +7264,16 @@ header nav ul li a {
 	}
 	ul li {
 		padding: .5em 0;
+	}
+	ul.menu-left {
+		display: block;
+		max-height: 0;
+		overflow: hidden;
+		transition: all 0.3s ease-out;
+		z-index: 10;
+	}
+	ul.menu-left.collapse {
+		max-height: 15em !important;
 	}
 }
 
@@ -7636,20 +7649,26 @@ header nav ul li a {
 }
 
 */
-.page-1 #seccion1 {
-	background: #444 url("images/bg-1.jpg") no-repeat center center fixed;
+/* header */
+#header-bar .sitewrapper i {
+	margin: 0 10px 0 0;
 }
 
-.page-1 #seccion1 h2 {
-	font-size: 7em;
+#header-bar .sitewrapper .header-bar-datos {
+	font-size: 0.9em;
 }
 
-.page-1 #seccion1 small {
-	font-size: 0.3em;
-	font-weight: normal;
-	display: block;
+#header-bar .sitewrapper .header-bar-datos i {
+	margin: 0 0 0 15px;
 }
 
+@media (min-width: 34em) {
+	#header-bar .sitewrapper .header-bar-datos i {
+		margin: 0 3px 0 15px;
+	}
+}
+
+/* elements */
 .divisor {
 	display: block;
 	height: 3px;
@@ -7710,6 +7729,21 @@ header nav ul li a {
 .btn.btn-transparent:hover, .btn.btn-transparent:focus {
 	background: white;
 	color: #3b404d;
+}
+
+/* secciones */
+.page-1 #seccion1 {
+	background: #444 url("images/bg-1.jpg") no-repeat center center fixed;
+}
+
+.page-1 #seccion1 h2 {
+	font-size: 7em;
+}
+
+.page-1 #seccion1 small {
+	font-size: 0.3em;
+	font-weight: normal;
+	display: block;
 }
 
 .formulario {
@@ -7900,7 +7934,7 @@ header nav ul li a {
 
 @media (min-width: 62em) {
 	.modulo-testimonios .testimonios-blockquote {
-		width: 26%;
+		width: 29%;
 	}
 }
 
