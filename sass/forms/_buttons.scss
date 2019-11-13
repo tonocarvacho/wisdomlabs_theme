@@ -9,7 +9,6 @@ input[type="submit"] {
 	font-family: $font__lato;
 	@include font-size(1);
 	line-height: 1;
-	padding: 0 .3em;
 
 	&:hover ,
 	&:active,
@@ -41,4 +40,65 @@ color: #ffffff;
 padding: 0.4em 1em;
 border-radius: 5px;
 margin-left: 0.5em;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	text-decoration: none;
+}
+
+
+.btn-primary {
+    background-color: #3b404d;
+    border-color: white;
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: white;
+    color: #3b404d;
+    border-color: #3b404d;
+}
+
+.btn-secondary {
+    background-color: #7d6fb0;
+    color: white;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    background-color: white;
+    color: #7d6fb0;
+    border-color: #7d6fb0;
+}
+
+.btn.btn-transparent {
+	border: 1px solid white !important;
+    border-color: white;
+    color: white;
+    background: transparent;
+}
+
+.btn.btn-transparent:hover, .btn.btn-transparent:focus {
+    background: white;
+    color: #3b404d;
 }

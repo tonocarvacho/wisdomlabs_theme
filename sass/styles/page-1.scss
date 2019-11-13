@@ -2,6 +2,8 @@
 #header-bar {
 	.sitewrapper {
 
+		
+
 i {
 				margin:0 10px 0 0;
 				
@@ -26,6 +28,7 @@ i {
 
 /* elements */
 
+
 .divisor {
 	display: block;
 	height: 3px;
@@ -36,61 +39,35 @@ i {
 }
 
 .btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.btn {
-    text-decoration: none !important;
     border-radius: 0;
     text-transform: uppercase;
     font-size: .875rem;
     letter-spacing: 2.5px;
-    padding: 14px 35px !important;
+    padding: 14px 35px;
 }
 
-.btn-secondary {
-    background-color: #7d6fb0;
-    color: white;
+.nav-buttons {
+	.btn-primary {
+		margin-left: 15px;
+		padding: 14px 15px;
+		transition: padding 0.25s ease-in;
+	}
 }
 
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-    background-color: white;
-    color: #7d6fb0;
-    border-color: #7d6fb0;
+.hide-nav {
+  	.header-wrap {
+	  	height: 55px;
+	    transition: height 0.25s ease-in;
+	}
+	#header-bar {
+	  	height: 30px;
+	    transition: height 0.25s ease-in;
+	}
+	.nav-buttons .btn-primary {
+	  	padding: 10px 15px;
+	  	transition: padding 0.25s ease-in;
+	}
 }
-
-.btn.btn-transparent {
-	border: 1px solid white !important;
-    border-color: white;
-    color: white;
-    background: transparent;
-}
-
-.btn.btn-transparent:hover, .btn.btn-transparent:focus {
-    background: white;
-    color: #3b404d;
-}
-
 
 /* secciones */
 

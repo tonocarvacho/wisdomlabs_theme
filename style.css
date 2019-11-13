@@ -6472,7 +6472,6 @@ input[type="submit"] {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1;
-	padding: 0 .3em;
 }
 
 button:hover, button:active, button:focus,
@@ -6511,6 +6510,64 @@ input[type="submit"]:focus {
 	padding: 0.4em 1em;
 	border-radius: 5px;
 	margin-left: 0.5em;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	text-decoration: none;
+}
+
+.btn-primary {
+	background-color: #3b404d;
+	border-color: white;
+	color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+	background-color: white;
+	color: #3b404d;
+	border-color: #3b404d;
+}
+
+.btn-secondary {
+	background-color: #7d6fb0;
+	color: white;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+	background-color: white;
+	color: #7d6fb0;
+	border-color: #7d6fb0;
+}
+
+.btn.btn-transparent {
+	border: 1px solid white !important;
+	border-color: white;
+	color: white;
+	background: transparent;
+}
+
+.btn.btn-transparent:hover, .btn.btn-transparent:focus {
+	background: white;
+	color: #3b404d;
 }
 
 input[type="text"],
@@ -7084,11 +7141,12 @@ ul.children.toggled-on {
 ## Header
 --------------------------------------------------------------*/
 .bloque-header {
-	height: 90px;
+	height: 115px;
 }
 
 .header-wrap {
-	height: 55px;
+	height: 75px;
+	transition: height 0.25s ease-in;
 	background-color: #fff;
 }
 
@@ -7139,6 +7197,7 @@ ul.children.toggled-on {
 
 .site-header #header-bar {
 	height: 40px;
+	transition: height 0.25s ease-in;
 	width: 100%;
 	background-color: #0379C5;
 	color: #fff;
@@ -7277,11 +7336,10 @@ header nav ul li a {
 	}
 }
 
+/*
 .hide-nav {
-	transform: translateY(-120% !important);
-	-webkit-transform: translateY(-120%) !important;
-}
-
+ transform: translateY(-120% !important); -webkit-transform: translateY(-120%) !important; }
+ */
 .nav-toggle {
 	display: block;
 	border-radius: 5px;
@@ -7678,57 +7736,32 @@ header nav ul li a {
 }
 
 .btn {
-	display: inline-block;
-	font-weight: 400;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	border: 1px solid transparent;
-	border-top-color: transparent;
-	border-right-color: transparent;
-	border-bottom-color: transparent;
-	border-left-color: transparent;
-	padding: .375rem .75rem;
-	font-size: 1rem;
-	line-height: 1.5;
-	border-radius: .25rem;
-	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.btn {
-	text-decoration: none !important;
 	border-radius: 0;
 	text-transform: uppercase;
 	font-size: .875rem;
 	letter-spacing: 2.5px;
-	padding: 14px 35px !important;
+	padding: 14px 35px;
 }
 
-.btn-secondary {
-	background-color: #7d6fb0;
-	color: white;
+.nav-buttons .btn-primary {
+	margin-left: 15px;
+	padding: 14px 15px;
+	transition: padding 0.25s ease-in;
 }
 
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-	background-color: white;
-	color: #7d6fb0;
-	border-color: #7d6fb0;
+.hide-nav .header-wrap {
+	height: 55px;
+	transition: height 0.25s ease-in;
 }
 
-.btn.btn-transparent {
-	border: 1px solid white !important;
-	border-color: white;
-	color: white;
-	background: transparent;
+.hide-nav #header-bar {
+	height: 30px;
+	transition: height 0.25s ease-in;
 }
 
-.btn.btn-transparent:hover, .btn.btn-transparent:focus {
-	background: white;
-	color: #3b404d;
+.hide-nav .nav-buttons .btn-primary {
+	padding: 10px 15px;
+	transition: padding 0.25s ease-in;
 }
 
 /* secciones */

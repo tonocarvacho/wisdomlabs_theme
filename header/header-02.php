@@ -55,7 +55,7 @@
 					endif; ?>
 					</div><!-- .site-branding__text -->
 				</div><!-- .site-branding -->
-		<div class="nav-buttons"><a href="#" class="btn btn-primary"> Reservar hora</a>
+		<div class="nav-buttons"><a href="#" class="primary-button"> Reservar hora</a>
 							<a aria-label="mobile menu" class="nav-toggle"> <span></span> <span></span> <span></span> </a></div>
 				<nav id="site-navigation" class="main-navigation">
 

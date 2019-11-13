@@ -1,10 +1,11 @@
 .bloque-header {
-	height: 90px;
+	height: 115px;
 }
 
 
 .header-wrap {
-	height: 55px;
+	height: 75px;
+	transition: height 0.25s ease-in;
 	background-color: $color__header-background;
 }
 .site-header {
@@ -44,6 +45,7 @@ flex-wrap: wrap;
 		}
 		#header-bar {
 			height: 40px;
+			transition: height 0.25s ease-in;
 			width: 100%;
 			background-color: $color__header-bar;
 			color: $color__header-bar-text;
