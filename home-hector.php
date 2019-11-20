@@ -179,6 +179,19 @@ get_header();
 						<div class="entry-content">
 							<?php echo get_excerpt(80); ?>
 						</div>
+						<div class="continue-reading">
+							<?php
+							$read_more_link = sprintf(
+								/* translators: %s: Name of current post. */
+								wp_kses( __( 'Read more %s', 'wisdomlabs' ), array( 'span' => array( 'class' => array() ) ) ),
+								the_title( '<span class="screen-reader-text">"', '"</span>', false )
+							);
+							?>
+
+							<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
+								<?php echo $read_more_link; ?>
+							</a>
+						</div><!-- .continue-reading -->
 
 
 					</div></article>
@@ -220,6 +233,19 @@ get_header();
 						<div class="entry-content">
 							<?php echo get_excerpt(80); ?>
 						</div>
+						<div class="continue-reading">
+							<?php
+							$read_more_link = sprintf(
+								/* translators: %s: Name of current post. */
+								wp_kses( __( 'Read more %s', 'wisdomlabs' ), array( 'span' => array( 'class' => array() ) ) ),
+								the_title( '<span class="screen-reader-text">"', '"</span>', false )
+							);
+							?>
+							
+							<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
+								<?php echo $read_more_link; ?>
+							</a>
+						</div><!-- .continue-reading -->
 
 
 					</div></article>
@@ -262,6 +288,19 @@ get_header();
 						<div class="entry-content">
 							<?php echo get_excerpt(80); ?>
 						</div>
+						<div class="continue-reading">
+							<?php
+							$read_more_link = sprintf(
+								/* translators: %s: Name of current post. */
+								wp_kses( __( 'Read more %s', 'wisdomlabs' ), array( 'span' => array( 'class' => array() ) ) ),
+								the_title( '<span class="screen-reader-text">"', '"</span>', false )
+							);
+							?>
+							
+							<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
+								<?php echo $read_more_link; ?>
+							</a>
+						</div><!-- .continue-reading -->
 
 
 					</div></article>

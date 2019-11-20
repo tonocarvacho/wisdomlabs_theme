@@ -8107,8 +8107,12 @@ header nav ul li a {
 }
 
 .seccion-articulos .continue-reading {
-	text-align: right;
 	font-weight: 700;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.seccion-articulos .continue-reading a {
+	text-decoration: none;
 }
 
 .seccion-articulos .titulo-articulos {

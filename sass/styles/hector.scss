@@ -431,8 +431,11 @@ margin-top: 8px;
 		margin: 0;
 	}
 	.continue-reading {
-		text-align: right;
-		font-weight: 700
+		font-weight: 700;
+		font-family: $font__secondary;
+		a {
+			text-decoration: none;
+		}
 	}
 	.titulo-articulos {
 		display: flex;
