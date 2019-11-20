@@ -1,4 +1,4 @@
-button,
+/*button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -17,7 +17,7 @@ input[type="submit"] {
 		color: black;
 	}
 }
-
+*/
 /* botones linea */
 .linebtn {
 	padding: 15px;	
@@ -67,17 +67,19 @@ margin-left: 0.5em;
 	text-decoration: none;
 }
 
-
+.btn:hover {
+    cursor: pointer;
+}
 .btn-primary {
-    background-color: #3b404d;
+    background-color: $color__background-button;
     border-color: white;
     color: white;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background-color: white;
-    color: #3b404d;
-    border-color: #3b404d;
+    background-color: transparent;
+    color: $color__border-button-hover;
+    border-color: $color__border-button-hover;
 }
 
 .btn-secondary {

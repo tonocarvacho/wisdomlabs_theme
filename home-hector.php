@@ -16,7 +16,7 @@ get_header();
 				
 			</video>
 		<div class="container texto-video">
-			<h1 style="text-align: center;">Hector Carvacho G.<small>Social Psychology | Political Psychology</small></h1>
+			<h1 style="text-align: center;">HECTOR CARVACHO G.<small>Social Psychology | Political Psychology</small></h1>
 			
 		</div>
 	</div>
@@ -24,16 +24,16 @@ get_header();
 <div class="modulo-afp">
 		
 		<div class="sitewrapper">
-			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logo1.jpg">
-			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logo2.jpg">
-			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logo3.jpg">
+			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/harvard-university.png">
+			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/bielefeld-university.png">
+			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/universidad-catolica.png">
 		</div>
 		<div class="sitewrapper">
 			
-			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logo4.jpg">
-			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logo5.jpg">
-			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logo6.jpg">
-			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logo7.jpg">
+			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/philipps-university.png">
+			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/ciir-logo.png">
+			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/aps-logo.png">
+			<img src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/conicyt-logo.png">
 		</div>
 		
 	</div>
@@ -46,13 +46,17 @@ get_header();
 				<div>
 					<h2>Hector Carvacho G.</h2>
 					<span class="divisor"></span>
-					<p>Atlanta Dental Spa represents everything “going to the dentist” is not. We have upgraded your dreaded dentist appointment and transformed it into a relaxing and pampering wellness visit.<p>
-					<p>Our mission is to deliver the highest quality care, unprecedented comfort, and service. We’re committed to delivering the very best results for you, whether it’s:<p>
+					 
+					
+					<p>Hector Carvacho studied psychology at the Pontificia Universidad Católica de Chile. Then moved to Germany, where he completed his PhD in 2013 at Bielefeld University. In 2014 he became a Postdoctoral fellow at the Department of Psychology, Harvard University<p>
+					<p> Since June 2014 he is a part of Sidanius's Lab. He's also associated to the Interdisciplinary Center for Intercultural and Indigenous Studies (ICIIS) in Chile. <p>
 					<ul>
-						<li>Creating the perfect smile</li>
-						<li>Reconstructing your entire mouth</li>
-						<li>Helping you achieve total wellness</li>
+						<li><strong>Psychologist</strong>, Pontifical Catholic University of Chile.</li>
+						<li><strong>Doctor of psychology</strong>, Bielefeld University, Germany.</li>
+						<li><strong>Postdoctorate</strong>, Department of Psychology, Harvard University, USA.</li>
 					</ul>
+					<br>
+					<input class="btn btn-primary btn-profile" type="button" value="Curriculum Vitae">
 				</div>
 				
 			</div>
@@ -61,9 +65,9 @@ get_header();
 
 	
 
-	<div id="seccion3" class="bloque-contacto">
+	<div id="seccion3" class="bloque-contacto seccion">
 		<div class="sitewrapper">
-			<h1 class="titulo-seccion titulo-home">Use the form below to contact the hinl.</h1>
+			<h1 class="titulo-seccion titulo-home"><span class="titulo-light">Use the form below to contact</span> Hector Carvacho</h1>
 			<div class="grid2">
 				<div>
 					<h2>Contact Info</h2>
@@ -91,25 +95,33 @@ get_header();
 					</div>
 					<div>
 						<h4>Social Network</h4>
-						<div class="contacto-contenedor">
+						<div class="">
 							
 							<div class="dato-margen">
-								<i class="fab fa-facebook-square"></i>
-								<span>Google Scholar</span>
+								<a href="https://scholar.google.com/citations?user=mcScWqUAAAAJ&hl=en">
+																<span>Google Scholar</span></a>
 							</div>
 							<div class="dato-margen">
-								<i class="fab fa-instagram"></i>
-								<span>Harvard University</span>
+								
+<a href="https://scholar.harvard.edu/carvacho">
+								
+								<span>Harvard University Profile</span>
+								</a>
 							</div>
-
-						</div>
-						<div class="contacto-contenedor">
 							<div>
-								<i class="fab fa-instagram"></i>
-								<span>Universidad Catolica</span>
+								
+								<a href="http://www.psicologia.uc.cl/persona/hector-carvacho-garcia/">
+																
+																<span>Universidad Catolica Profile</span></a>
+							</div>
+							<div>
+								<a href="http://www.ciir.cl/ciir.cl/en/persona/hector-carvacho/">
+															
+															<span>CIIR Profile</span></a>
 							</div>
 
 						</div>
+					
 						
 					</div>
 
@@ -130,104 +142,136 @@ get_header();
 					
 					<div class="formulario-margen"><span>Mensaje:</span>
 										<input type="textarea" name="lastname" value=""></div>
-					<input class="btn btn-transparent" type="submit" value="Submit">
+					<input class="btn btn-primary" type="submit" value="Submit">
 			</form>
 				</div>
 			</div>
 		</div>
 	</div>
 
-<div id="seccion7" class="seccion seccion-articulos"><div class="sitewrapper">
-	<div class="titulo-articulos">
-			<h2>Blog</h2>
-			<a class="leer-todos" href="#">See all</a>
-</div>
-</div>
-		<div class="sitewrapper grid4">
-
-
-			<article class="bloque-articulo">
-				<figure class="featured-image index-image">
-					<img src="<?php echo bloginfo('template_url');?>/images/img1.jpg">
-				</figure>
-					<div class="entry-info">
-						<header class="entry-header">
-							<h3 class="entry-title">Aumenta tus ventas y clientes</h3>
-							
-						</header><!-- .entry-header -->
-					
-						<div class="entry-content">
-							<p>Hacemos llegar tus productos y servicios de forma expedita y efectiva a un público más amplio.</p>
-						</div><!-- .entry-content -->
-					
-						<div class="continue-reading">
-								<a href="#">Leer mas</a>
-							</div><!-- .continue-reading -->
-					</div><!-- .entry-info -->
-			</article>
-
-			<article class="bloque-articulo">
-				<figure class="featured-image index-image">
-					<img src="<?php echo bloginfo('template_url');?>/images/img2.jpg">
-				</figure>
-					<div class="entry-info">
-						<header class="entry-header">
-							<h3 class="entry-title">Aumenta tus ventas y clientes</h3>
-							
-						</header><!-- .entry-header -->
-					
-						<div class="entry-content">
-							<p>Hacemos llegar tus productos y servicios de forma expedita y efectiva a un público más amplio.</p>
-						</div><!-- .entry-content -->
-					
-						<div class="continue-reading">
-								<a href="#">Leer mas</a>
-							</div><!-- .continue-reading -->
-					</div><!-- .entry-info -->
-			</article>
-
-			<article class="bloque-articulo">
-				<figure class="featured-image index-image">
-					<img src="<?php echo bloginfo('template_url');?>/images/img3.jpg">
-				</figure>
-					<div class="entry-info">
-						<header class="entry-header">
-							<h3 class="entry-title">Aumenta tus ventas y clientes</h3>
-							
-						</header><!-- .entry-header -->
-					
-						<div class="entry-content">
-							<p>Hacemos llegar tus productos y servicios de forma expedita y efectiva a un público más amplio.</p>
-						</div><!-- .entry-content -->
-					
-						<div class="continue-reading">
-								<a href="#">Leer mas</a>
-							</div><!-- .continue-reading -->
-					</div><!-- .entry-info -->
-			</article>
-
-			<article class="bloque-articulo">
-				<figure class="featured-image index-image">
-					<img src="<?php echo bloginfo('template_url');?>/images/img3.jpg">
-				</figure>
-					<div class="entry-info">
-						<header class="entry-header">
-							<h3 class="entry-title">Aumenta tus ventas y clientes</h3>
-							
-						</header><!-- .entry-header -->
-					
-						<div class="entry-content">
-							<p>Hacemos llegar tus productos y servicios de forma expedita y efectiva a un público más amplio.</p>
-						</div><!-- .entry-content -->
-					
-						<div class="continue-reading">
-								<a href="#">Leer mas</a>
-							</div><!-- .continue-reading -->
-					</div><!-- .entry-info -->
-			</article>
-
+<!-------- Latest Publications ---------->
+<div class="seccion seccion-articulos">
+	<div class="sitewrapper">
+		<div class="titulo-articulos">
+			<h2>Latest Publications</h2>
+			<a class="leer-todos" href="#"><strong class="font-secondary">See all</strong></a>
 		</div>
 	</div>
+	<div class="sitewrapper grid4">
+		<?php
+		$args = array (
+			'category_name' => 'Featured',
+			'post_type' => 'post',
+			'posts_per_page' => 4, 
+		);
+		$category_block_query = new WP_Query( $args );
+		if ( $category_block_query->have_posts() ) : 
+			while ( $category_block_query->have_posts() ) : $category_block_query->the_post(); 
+				?> <article class="bloque-articulo">
+					<figure class="featured-image index-image">
+
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-post-featured');?></a>
+					</figure>
+					<div class="entry-info">
+						<header class="entry-header">
+							<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						</header>
+						<div class="entry-content">
+							<?php echo get_excerpt(80); ?>
+						</div>
+
+
+					</div></article>
+					<?php
+				endwhile; wp_reset_postdata();
+			else: 
+			endif; 
+			?>
+	</div>
+</div>
+
+<!-------- Latest Articles ---------->
+<div class="seccion seccion-articulos latest-articles">
+	<div class="sitewrapper">
+		<div class="titulo-articulos">
+			<h2>Latest Articles</h2>
+			<a class="leer-todos" href="#"><strong class="font-secondary">See all</strong></a>
+		</div>
+	</div>
+	<div class="sitewrapper grid4">
+		<?php
+		$args = array (
+			'category_name' => 'Featured',
+			'post_type' => 'post',
+			'posts_per_page' => 4, 
+		);
+		$category_block_query = new WP_Query( $args );
+		if ( $category_block_query->have_posts() ) : 
+			while ( $category_block_query->have_posts() ) : $category_block_query->the_post(); 
+				?> <article class="bloque-articulo">
+					<figure class="featured-image index-image">
+
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-post-featured');?></a>
+					</figure>
+					<div class="entry-info">
+						<header class="entry-header">
+							<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						</header>
+						<div class="entry-content">
+							<?php echo get_excerpt(80); ?>
+						</div>
+
+
+					</div></article>
+					<?php
+				endwhile; wp_reset_postdata();
+			else: 
+			endif; 
+			?>
+	</div>
+</div>
+
+
+<!-------- Featured Research ---------->
+<div class="seccion seccion-articulos">
+	<div class="sitewrapper">
+		<div class="titulo-articulos">
+			<h2>Featured Research</h2>
+			<a class="leer-todos" href="#"><strong class="font-secondary">See all</strong></a>
+		</div>
+	</div>
+	<div class="sitewrapper grid4">
+		<?php
+		$args = array (
+			'category_name' => 'Featured',
+			'post_type' => 'post',
+			'posts_per_page' => 4, 
+		);
+		$category_block_query = new WP_Query( $args );
+		if ( $category_block_query->have_posts() ) : 
+			while ( $category_block_query->have_posts() ) : $category_block_query->the_post(); 
+				?> <article class="bloque-articulo">
+					<figure class="featured-image index-image">
+
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-post-featured');?></a>
+					</figure>
+					<div class="entry-info">
+						<header class="entry-header">
+							<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						</header>
+						<div class="entry-content">
+							<?php echo get_excerpt(80); ?>
+						</div>
+
+
+					</div></article>
+					<?php
+				endwhile; wp_reset_postdata();
+			else: 
+			endif; 
+			?>
+	</div>
+</div>
 	
 	
 

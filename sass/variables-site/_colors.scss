@@ -1,9 +1,9 @@
 /* pallet */
-$color__pallet-one: #08a5cb;
-$color__pallet-two: #06738E;
-$color__pallet-three: #044a5b;
-$color__pallet-four: #00171f;
-$color__pallet-five: #8dbfcb;
+$color__pallet-one: #b50937;
+$color__pallet-two: #e60b46;
+$color__pallet-three: #95082e;
+$color__pallet-four: #30393a;
+$color__pallet-five: #d67891;
 $color__pallet-six: #b7b5b5;
 $color__pallet-seven: #818181;
 
@@ -20,31 +20,33 @@ $color__header:#fff;
 $color__header-bar: #30393a;
 $color__header-bar-text: #fff;
 $color__header-background: #fff;
+$color__nav-links: #7a7a7a ;
+$color__nav-links-hover: rgba(122,122,122,.7);
+$color__nav-links-focus: rgba(122,122,122,.7);
 $color__nav-button: #7a7a7a ;
 $color__nav-button-hover: rgba(122,122,122,.7);
 $color__nav-button-focus: rgba(122,122,122,.7);
 
 /* text */
 $color__text-main: #404040;
-$color__main-text: #3598D9;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
 
 /* breadcrumbs */
 $color__breadcrumbs: #b7b5b5;
-$color__breadcrumbs-link: #8dbfcb;
-$color__breadcrumbs-hover: #06738E;
+$color__breadcrumbs-link: #d67891;
+$color__breadcrumbs-hover: #b50937;
 
 /* entry-meta */
 $color__entry-meta: #818181;
-$color__entry-meta-link: #08a5cb;
-$color__entry-meta-link-hover: #06738E;
+$color__entry-meta-link: #b50937;
+$color__entry-meta-link-hover: #e60b46;
 
 /* tags */
 $color__tags: #b7b5b5;
-$color__link-tag: #8dbfcb;
-$color__link-tag-hover: #06738E;
+$color__link-tag: #d67891;
+$color__link-tag-hover: #b50937;
 
 /* links */
 $color__link: #b50937;
@@ -56,9 +58,10 @@ $color__link-text-hover: midnightblue;
 
 
 /* buttons */
-$color__background-button: #e6e6e6;
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
+$color__background-button: #b50937;
+$color__background-button-hover: #b50937;
+$color__border-button: #b50937;
+$color__border-button-hover: #b50937;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
@@ -68,5 +71,6 @@ $color__background-button-cat: #3598D9;
 $color__text-button-cat: white;
 
 /* footer */
-$color__footer-background: #fff;
-$color__footer-background2: #3598D9;
+$color__footer-background: #95082e;
+$color__footer-background2: #30393a;
+$color__footer-background3: black;

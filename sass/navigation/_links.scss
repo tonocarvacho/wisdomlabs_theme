@@ -1,8 +1,19 @@
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: $color__text-main;
+	&:visited {
+		color: $color__text-main;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link;
+	}
+}
 a {
-	color: black;
+	color: $color__link;
 	text-decoration: none;
 	&:visited {
-		color: black;
+		color: $color__link;
 	}
 	&:hover,
 	&:focus,
@@ -16,6 +27,27 @@ a {
 	&:active {
 		outline: 0;
 		text-decoration: underline;
+	}
+}
+
+#header-bar {
+	a {
+		color: #fff !important;
+		text-decoration: none
+	}
+}
+#primary-menu {
+	
+	a {
+		color: $color__nav-links;
+		&:hover,
+	&:focus,
+	&:active {
+		color: $color__link;
+	}
+	}
+	a[aria-current]{
+		color: $color__link;
 	}
 }
 

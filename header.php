@@ -26,19 +26,23 @@
 	<header id="masthead" class="site-header">
 		<div id="header-bar">
 			<div class="sitewrapper">
-				<div><i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter-square"></i> </div>
-				<div class="header-bar-datos"><i class="fas fa-map-marker-alt"></i> <span class="mapa">Mapa </span>
-				<i class="fas fa-envelope"></i> <span class="correo">info@dentista.com</span>
-				<i class="fas fa-phone"></i><span>+56912345678</span>
+				<div>
+					<a href="https://scholar.google.com/citations?user=mcScWqUAAAAJ&hl=en"><img class="iconwhite" src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logosmallwhite1.png"></a>
+					<a href="https://scholar.harvard.edu/carvacho"><img class="iconwhite" src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logosmallwhite2.png"></a>
+					<a href="#"><img class="iconwhite" src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logosmallwhite3.png"></a>
+				</div>
+				<div class="header-bar-datos">
+
+					<i class="fas fa-phone"></i><span>+56912345678</span>
+				<i class="fas fa-envelope"></i> <span class="correo">hscarvac@uc.cl</span>
+				
 			</div>
 			</div>
 		</div>
 		<div class="full-width header-wrap">
 		<div class="sitewrapper">
 			<div class="site-branding">
-					<?php
-					the_custom_logo();
-					?>
+					<h1 class="nombre-sitio"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">HECTOR CARVACHO</a></h1>
 					<div class="site-branding__text">
 					<?php
 					if ( is_front_page() && is_home() ) : ?>
@@ -55,7 +59,8 @@
 					endif; ?>
 					</div><!-- .site-branding__text -->
 				</div><!-- .site-branding -->
-		<div class="nav-buttons"><a href="#" class="btn btn-primary"> Reservar hora</a>
+		<div class="nav-buttons">
+			<i class="fas fa-search lupa"></i>
 							<a aria-label="mobile menu" class="nav-toggle"> <span></span> <span></span> <span></span> </a></div>
 				<nav id="site-navigation" class="main-navigation">
 

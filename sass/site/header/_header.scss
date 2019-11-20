@@ -1,13 +1,4 @@
-.bloque-header {
-	height: 115px;
-}
 
-
-.header-wrap {
-	height: 75px;
-	transition: height 0.25s ease-in;
-	background-color: $color__header-background;
-}
 .site-header {
 	-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.11);
 	-moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.11);
@@ -17,6 +8,7 @@
 	.sitewrapper {
 
 			height: 100%;
+			align-content: center;
 			@include query-tablet-up {	
 			.nav-buttons {
 					order: 1;
@@ -100,12 +92,6 @@ flex-wrap: wrap;
 	}
 }
 
-#primary-menu {
-	
-	a {
-		color: $color__main-text;
-	}
-}
 .barramenu {
     width: 30px;
     height: 4px;

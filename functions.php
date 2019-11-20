@@ -212,6 +212,13 @@ add_action( 'init', 'custom_post_types', 0 );
 /**
  * Register custom fonts.
  */
+function wpb_add_google_fonts() {
+ 
+wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap', false ); 
+}
+ 
+add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
 function wisdomlabs_fonts_url() {
 	$fonts_url = '';
 
@@ -428,3 +435,15 @@ function prefix_category_title( $title ) {
     return $title;
 }
 add_filter( 'get_the_archive_title', 'prefix_category_title' );
+
+// Limit except length to 125 characters.
+// tn limited excerpt length by number of characters
+function get_excerpt( $count ) {
+$permalink = get_permalink($post->ID);
+$excerpt = get_the_content();
+$excerpt = strip_tags($excerpt);
+$excerpt = substr($excerpt, 0, $count);
+$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+$excerpt = '<p>'.$excerpt.'... <br><strong><a class="font-secondary" href="'.$permalink.'">Read More</a></strong></p>';
+return $excerpt;
+}

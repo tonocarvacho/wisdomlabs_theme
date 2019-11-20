@@ -1,5 +1,58 @@
 /* header */
+.iconwhite {
+	width: 18px;
+	margin: 0 7px 0 0;
+}
+.nombre-sitio {
+	font-size: 1.5em;
+	@include query-tablet-up {
+		font-size: 1.4em
+	}
+	@include query-desktop-up {
+		font-size: 1.5em
+	}
+	
+}
+.bloque-header {
+	height: 100px;
+}
+
+
+.header-wrap {
+	height: 60px;
+	transition: height 0.25s ease-in;
+	background-color: $color__header-background;
+}
+
+.lupa {
+	margin: 0 0 0 15px;
+	color: $color__link;
+}
+
+.nav-buttons {
+	.btn-primary {
+		margin-left: 15px;
+		padding: 14px 15px;
+		transition: padding 0.25s ease-in;
+	}
+}
+
+.hide-nav {
+  	.header-wrap {
+	  	height: 45px;
+	    transition: height 0.25s ease-in;
+	}
+	#header-bar {
+	  	height: 30px;
+	    transition: height 0.25s ease-in;
+	}
+	.nav-buttons .btn-primary {
+	  	padding: 10px 15px;
+	  	transition: padding 0.25s ease-in;
+	}
+}
 #header-bar {
+	font-family: $font__secondary;
 	.sitewrapper {
 
 		
@@ -60,14 +113,16 @@ width: 100%
 }
 
 /* elements */
-
+.font-secondary {
+	font-family: $font__secondary;
+}
 .titulo-home {
 	margin-bottom: 35px
 }
 .divisor {
 	display: block;
 	height: 3px;
-	background-color: red;
+	background-color: $color__link;
 	width: 15%;
 	margin: 15px 75% 15px 0;
 
@@ -79,34 +134,23 @@ width: 100%
     font-size: .875rem;
     letter-spacing: 2.5px;
     padding: 14px 35px;
+    font-family: $font__secondary;
 }
 
-.nav-buttons {
-	.btn-primary {
-		margin-left: 15px;
-		padding: 14px 15px;
-		transition: padding 0.25s ease-in;
-	}
-}
 
-.hide-nav {
-  	.header-wrap {
-	  	height: 55px;
-	    transition: height 0.25s ease-in;
-	}
-	#header-bar {
-	  	height: 30px;
-	    transition: height 0.25s ease-in;
-	}
-	.nav-buttons .btn-primary {
-	  	padding: 10px 15px;
-	  	transition: padding 0.25s ease-in;
-	}
-}
 
 /* secciones */
 
 /* contact */
+.bloque-contacto {
+	.titulo-light {
+		font-weight: 300;
+	}
+	background-color: #f4f4f4;
+	h1 {
+		margin-top: 0;
+	}
+}
 .dato-margen-bottom {
 		margin-bottom: 15px;
 	}
@@ -126,6 +170,9 @@ width: 100%
 
 
 .page-1 {
+	.seccion {
+    padding: 55px 0;
+}
 	#seccion1 {
 		position: relative;
 		height: 700px;
@@ -144,8 +191,8 @@ width: 100%
 			font-size: 3.2em;
 		}
 		small {
-	    	font-size: 0.5em;
-	    	font-weight: normal;
+	    	font-size: 0.6em;
+font-weight: 300;
 	    	display: block;
 	    	margin-top: 10px
 		}
@@ -228,39 +275,88 @@ width: 100%
 	
 }
 
+/* ----- footer ----- */
 .modulo-frase {
-	aside {
-		max-width: 700px;
+	background-color: $color__footer-background;
+	color: white;
+	text-align: center;
+	padding: 25px 0;
+	
+	@include query-phone-up {
+		h2 {
+			margin-right: 35px;	
+		}
 	}
-	background: #444 url("images/bg-2.jpg") 50% 0 no-repeat fixed;
-  	h2 {
-		font-size: 2em;
-		line-height: 1.8em;
+	@include query-phone-down {
+	h2 {
+		margin-bottom: 35px;	
+	}
+}
+  .sitewrapper{
+  	@include query-phone-up {
+		justify-content: center;
+  		display: flex;
+  		align-items: center;
+	}
+  	
+  	a {
+  		margin: 0;
+  	}
+  }
+}
+
+.footer-wrap {
+	padding: 20px;
+background-color: $color__footer-background2;
+color: white;
+}
+.divider3 {
+    background-color: none;
+    border-bottom: 1px solid #fff;
+    height: 1px;
+    margin: 0.5em 0 0.5em;
+}
+.site-footer {
+	@include query-tablet-up {
+	 .grid4 > div {
+			width: 22%;
+		}
 	}
 	a {
 
-margin-left: auto;
-		margin-right: auto;
+color: white !important;
+ }
+
+	li, ul {
+		list-style: none;
+		padding: 0;
+		margin: 0
 	}
-	.fa-quote-left {
-		font-size: 1.4em;
-		margin-right: 5px
-	}
-	.fa-quote-right {
-		font-size: 0.7em;
-		margin-left: 5px
-	}
+
+ .site-info {
+ 	background-color: $color__footer-background3;
+ 	text-align: center;
+ 	font-size: 0.8em;
+ 	padding: 10px;
+ 	color: white !important;
+ 	a {
+
+color: white !important;
+ }
+ }
 }
 
+/* ----- logos ----- */
 .modulo-afp {
 	padding: 20px 0;
+	background-color: #f4f4f4;
 	.sitewrapper{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		img {
 		width: 180px !important;
-		margin: 0 25px 0 0;
+		margin: 5px 25px 10px 0;
 	}
 	}
 	
@@ -320,8 +416,17 @@ padding-left: 55px;
 
 
 /*articulos*/
-
+.latest-articles {
+	background-color: #f4f4f4;
+}
 .seccion-articulos {
+	.leer-todos {
+		font-size: 1.3em;
+margin-top: 8px;
+	}
+	figure {
+    margin-bottom: 0.1em;
+}
 	p{
 		margin: 0;
 	}
@@ -335,8 +440,12 @@ padding-left: 55px;
 		width: 100%;
 		border-bottom: 1px solid gray;
 		padding-bottom: 10px;
+		h2 {
+			font-weight: 300;
+		}
 	}
 	.bloque-articulo {
 		margin-top: 15px;
+		margin-bottom: 0; 
 	}
 }

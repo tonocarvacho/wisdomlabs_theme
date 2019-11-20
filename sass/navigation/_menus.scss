@@ -1,5 +1,6 @@
 .main-navigation {
-
+	font-family: $font__secondary;
+	font-weight: 300;
 	ul {
 		display: none;
 		list-style: none;
@@ -142,7 +143,7 @@ ul.children.toggled-on  {
 			ul {
 			display: flex;
 			flex-wrap: wrap;
-			font-size: 1em;
+			font-size: 0.9em;
 			justify-content: flex-end;
 			
 				li a{
