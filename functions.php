@@ -44,6 +44,8 @@ if ( ! function_exists( 'wisdomlabs_setup' ) ) :
 		add_image_size( 'wisdomlabs-full-bleed', 2000, 1200, true );
 		add_image_size( 'wisdomlabs-post-featured', 640, 480, true );
 		add_image_size( 'wisdomlabs-index-image', 800, 450, true );
+		add_image_size( 'wisdomlabs-archive-image', 700, 410, true );
+		add_image_size( 'wisdomlabs-aside-image', 400, 234, true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

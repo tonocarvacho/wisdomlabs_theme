@@ -22,7 +22,7 @@
 		<div class="sitewrapper">
 			
 				<h2>Send your questions</h2>
-				<a href="http://workonlinelab.com/gloway/contacto/" class="linebtn btncolorfooter">CONTACT</a>	
+				<a href="http://workonlinelab.com/gloway/contacto/" class="btn-transparent btn">CONTACT</a>	
 		</div>
 	</div>
 	<footer id="colophon" class="site-footer">

@@ -32,7 +32,8 @@
 					<a href="#"><img class="iconwhite" src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/logosmallwhite3.png"></a>
 				</div>
 				<div class="header-bar-datos">
-
+<a href="#"><img class="flag" src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/english-flag.png"></a>
+<a href="#"><img class="flag" src="<?php echo bloginfo('template_url');?>/images/hector_carvacho/spain-flag.png"></a>
 					<i class="fas fa-phone"></i><span>+56912345678</span>
 				<i class="fas fa-envelope"></i> <span class="correo">hscarvac@uc.cl</span>
 				

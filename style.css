@@ -7649,6 +7649,12 @@ header nav ul li a {
 @import "styles/gloway";
 ----------------*/
 /* header */
+.flag {
+	width: 17px;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+	margin-right: 10px;
+}
+
 .iconwhite {
 	width: 18px;
 	margin: 0 7px 0 0;
@@ -8089,7 +8095,7 @@ header nav ul li a {
 }
 
 /*articulos*/
-.latest-articles {
+.featured-research {
 	background-color: #f4f4f4;
 }
 
@@ -8132,6 +8138,22 @@ header nav ul li a {
 .seccion-articulos .bloque-articulo {
 	margin-top: 15px;
 	margin-bottom: 0;
+}
+
+.seccion-articulos .bloque-articulo.research {
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 35px;
+}
+
+.seccion-articulos .bloque-articulo.research figure {
+	margin-top: 0;
+	width: 200px;
+	margin-right: 25px;
+}
+
+.seccion-articulos .bloque-articulo.research figure img {
+	min-width: 200px;
 }
 
 /*# sourceMappingURL=../wisdomlabs/sass/maps/style.css.map */

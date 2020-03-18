@@ -160,7 +160,7 @@ get_header();
 	<div class="sitewrapper grid4">
 		<?php
 		$args = array (
-			'category_name' => 'Featured',
+			'category_name' => 'publications',
 			'post_type' => 'post',
 			'posts_per_page' => 4, 
 		);
@@ -170,7 +170,7 @@ get_header();
 				?> <article class="bloque-articulo">
 					<figure class="featured-image index-image">
 
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-post-featured');?></a>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-archive-image');?></a>
 					</figure>
 					<div class="entry-info">
 						<header class="entry-header">
@@ -203,35 +203,36 @@ get_header();
 	</div>
 </div>
 
-<!-------- Latest Articles ---------->
-<div class="seccion seccion-articulos latest-articles">
+<!-------- Featured Research ---------->
+<div class="seccion seccion-articulos featured-research">
 	<div class="sitewrapper">
 		<div class="titulo-articulos">
-			<h2>Latest Articles</h2>
+			<h2>Featured Research</h2>
+
 			<a class="leer-todos" href="#"><strong class="font-secondary">See all</strong></a>
 		</div>
 	</div>
-	<div class="sitewrapper grid4">
+	<div class="sitewrapper">
 		<?php
 		$args = array (
-			'category_name' => 'Featured',
+			'category_name' => 'research',
 			'post_type' => 'post',
 			'posts_per_page' => 4, 
 		);
 		$category_block_query = new WP_Query( $args );
 		if ( $category_block_query->have_posts() ) : 
 			while ( $category_block_query->have_posts() ) : $category_block_query->the_post(); 
-				?> <article class="bloque-articulo">
+				?> <article class="bloque-articulo research">
 					<figure class="featured-image index-image">
 
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-post-featured');?></a>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-archive-image');?></a>
 					</figure>
 					<div class="entry-info">
 						<header class="entry-header">
 							<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						</header>
 						<div class="entry-content">
-							<?php echo get_excerpt(80); ?>
+							<?php echo get_excerpt(140); ?>
 						</div>
 						<div class="continue-reading">
 							<?php
@@ -258,18 +259,18 @@ get_header();
 </div>
 
 
-<!-------- Featured Research ---------->
-<div class="seccion seccion-articulos">
+<!-------- Latest Articles ---------->
+<div class="seccion seccion-articulos latest-articles">
 	<div class="sitewrapper">
 		<div class="titulo-articulos">
-			<h2>Featured Research</h2>
+			<h2>Latest Articles</h2>
 			<a class="leer-todos" href="#"><strong class="font-secondary">See all</strong></a>
 		</div>
 	</div>
 	<div class="sitewrapper grid4">
 		<?php
 		$args = array (
-			'category_name' => 'Featured',
+			'category_name' => 'articles',
 			'post_type' => 'post',
 			'posts_per_page' => 4, 
 		);
@@ -279,7 +280,7 @@ get_header();
 				?> <article class="bloque-articulo">
 					<figure class="featured-image index-image">
 
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-post-featured');?></a>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('wisdomlabs-archive-image');?></a>
 					</figure>
 					<div class="entry-info">
 						<header class="entry-header">
